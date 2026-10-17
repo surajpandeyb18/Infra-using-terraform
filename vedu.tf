@@ -10,3 +10,9 @@ terraform {
 provider "azurerm" {
   # Configuration options
 }
+
+
+resource "azurerm_resource_group" "name" {
+  name     = "deepak-rg"
+  location = "east us"
+}
